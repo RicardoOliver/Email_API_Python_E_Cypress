@@ -27,8 +27,8 @@ Desenvolvi uma API completa para envio de e-mails utilizando Flask, que inclui f
     Automação de Testes: Garantia de qualidade com testes automatizados que cobrem principais fluxos de uso.
     Configuração Flexível: Uso de variáveis de ambiente para configuração de credenciais e parâmetros sensíveis.
 
-🔗 Link para o Repositório:
+🔗 Link para o Repositório: 
 
-    GitHub Repository
+   [ GitHub Repository](https://github.com/RicardoOliver/Email_API_Python_E_Cypress/tree/main)
 
 Este projeto demonstrou minha habilidade em integrar desenvolvimento backend com testes automatizados, e é uma excelente adição ao meu portfólio de projetos.
