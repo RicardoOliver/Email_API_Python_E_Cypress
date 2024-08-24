@@ -1,0 +1,37 @@
+name: Cypress Tests
+
+on: [push, pull_request]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4  
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Instalar as dependências
+        run: npm install
+
+      - name: Executar os testes
+        run: npx cypress run
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochawesome-report
+          path: |
+            cypress/reports
+            cypress/screenshots
+            cypress/videos
+            mochawesome-report
+          retention-days: 14

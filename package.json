@@ -1,0 +1,40 @@
+{
+  "name": "ypress_email_api",
+  "version": "1.0.0",
+  "description": "Teste API Email Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open",
+    "run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoOliver/Email_API_Python_E_Cypress.git"
+  },
+  "keywords": [
+    "Cypress.io",
+    "cypress-plugin-api",
+    "API Testing",
+    "cypress-mochawesome-reporter",
+    "testing"
+  ],
+  "author": "Ricardo Oliveira",
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "Cypress",
+      "cy",
+      "expect",
+      "credentials",
+      "describe",
+      "it",
+      "before",
+      "beforeEach"
+    ]
+  },
+  "devDependencies": {
+    "cypress": "^13.13.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-plugin-api": "^2.11.2"
+  }
+}
