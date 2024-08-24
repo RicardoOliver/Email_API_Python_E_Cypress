@@ -1,4 +1,4 @@
-📧 Email API com Flask e Cypress
+##📧 Email API com Flask e Cypress
 
 Desenvolvi uma API completa para envio de e-mails utilizando Flask, que inclui funcionalidades robustas para autenticação e envio de e-mails. Este projeto também conta com uma suíte de testes automatizados criados com Cypress para garantir a qualidade e a confiabilidade da aplicação.
 
@@ -16,26 +16,26 @@ Desenvolvi uma API completa para envio de e-mails utilizando Flask, que inclui f
     Envio de E-mails: Endpoint para envio de e-mails com suporte a autenticação.
     Testes Automatizados: Testes de autenticação e envio de e-mails, com verificação de sucesso e falhas, utilizando Cypress.
 
-🔍 Detalhes dos Testes:
+##🔍 Detalhes dos Testes:
 
     Autenticação: Testa a funcionalidade de login e valida a obtenção do token JWT.
     Envio de E-mail: Valida o envio de e-mails e o comportamento da API em casos de sucesso e erro.
 
-💡 Destaques do Projeto:
+##💡 Destaques do Projeto:
 
     Código Limpo e Documentado: Estrutura clara e bem documentada para fácil manutenção e escalabilidade.
     Automação de Testes: Garantia de qualidade com testes automatizados que cobrem principais fluxos de uso.
     Configuração Flexível: Uso de variáveis de ambiente para configuração de credenciais e parâmetros sensíveis.
 
-🔗 Link para o Repositório: 
+##🔗 Link para o Repositório: 
 
    [ GitHub Repository](https://github.com/RicardoOliver/Email_API_Python_E_Cypress/tree/main)
 
 Este projeto demonstrou minha habilidade em integrar desenvolvimento backend com testes automatizados, e é uma excelente adição ao meu portfólio de projetos.
 
 
-EMAIL API
-Descrição
+#EMAIL API
+##Descrição
 
 Este projeto é uma API para envio de e-mails, criada com Flask. A API inclui funcionalidades para autenticação via JWT e envio de e-mails. O projeto utiliza Cypress para testes automatizados e configura um ambiente de teste completo para garantir a qualidade e a funcionalidade da aplicação.
 Estrutura do Projeto
@@ -64,38 +64,38 @@ Estrutura do Projeto
     ├── .env
     └── README.md
 
-Configuração do Ambiente
+#Configuração do Ambiente
 
-Clone o repositório:
+##Clone o repositório:
 
     git clone https://github.com/usuario/email-api.git
     cd email-api
 
-2.Crie um ambiente virtual e ative-o:
+##2.Crie um ambiente virtual e ative-o:
 
       python -m venv venv
       source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
 
-3.Instale as dependências do Python:
+##3.Instale as dependências do Python:
 
     pip install -r requirements.txt
     
-4.Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
+##4.Crie um arquivo .env na raiz do projeto e adicione as seguintes variáveis de ambiente:
 
     MAIL_USERNAME=seu_email@gmail.com
     MAIL_PASSWORD=sua_senha
     SECRET_KEY=sua_chave_secreta
 
-Executando o Projeto
+#Executando o Projeto
 
-Inicie o servidor Flask:
+##Inicie o servidor Flask:
 
     python run.py
 
     O servidor estará disponível em http://127.0.0.1:5000.
 
-Testes Automatizados com Cypress
-1. auth.cy.js
+##Testes Automatizados com Cypress
+###1. auth.cy.js
 
 Este teste verifica a autenticação e a geração de um token JWT.
 
@@ -117,7 +117,7 @@ describe('Authentication', () => {
 });
 ```
 
-2. post_email.cy.js
+###2. post_email.cy.js
 
 Este arquivo testa o envio de e-mails, garantindo que o token é corretamente salvo e recuperado antes de cada teste.
 ```
@@ -159,7 +159,7 @@ describe('Enviar Email', () => {
 });
 ```
 
-3. commands.js
+###3. commands.js
 
 Define comandos personalizados para login e envio de e-mail.
 ```
@@ -193,7 +193,7 @@ Cypress.Commands.add('sendEmail', (recipient, subject, body) => {
 });
 ```
 
-4. cypress.config.js
+###4. cypress.config.js
 
 Configuração do Cypress com a URL base ajustada para o servidor local.
 ```
@@ -210,7 +210,7 @@ module.exports = defineConfig({
 ```
 
 
-Dicas Adicionais
+##Dicas Adicionais
 
     Verifique se o servidor de teste está em execução e acessível.
     Certifique-se de que o backend está retornando os dados esperados para login e envio de e-mail.
@@ -222,7 +222,7 @@ Dicas Adicionais
 
 
 
-Contribuição
+##Contribuição
 
 Sinta-se à vontade para contribuir para o projeto. Para enviar melhorias ou correções, faça um fork do repositório, faça suas alterações e envie um pull request.
 Licença
