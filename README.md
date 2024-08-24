@@ -2,7 +2,7 @@
 
 Desenvolvi uma API completa para envio de e-mails utilizando Flask, que inclui funcionalidades robustas para autenticação e envio de e-mails. Este projeto também conta com uma suíte de testes automatizados criados com Cypress para garantir a qualidade e a confiabilidade da aplicação.
 
-🔧 Tecnologias Utilizadas:
+## 🔧 Tecnologias Utilizadas:
 
     Flask: Para o desenvolvimento da API RESTful.
     JWT (JSON Web Token): Para autenticação segura.
@@ -10,7 +10,7 @@ Desenvolvi uma API completa para envio de e-mails utilizando Flask, que inclui f
     Python: Para o desenvolvimento backend.
     JavaScript: Para a automação de testes com Cypress.
 
-🛠 Funcionalidades Principais:
+## 🛠 Funcionalidades Principais:
 
     Autenticação JWT: Implementada para proteger endpoints e garantir acesso seguro.
     Envio de E-mails: Endpoint para envio de e-mails com suporte a autenticação.
